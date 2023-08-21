@@ -3,7 +3,7 @@ import sys
 
 from telegram import Update
 from telegram.ext import Application, CommandHandler
-from roll import roll, reroll, help
+from roll import roll, reroll, help_message
 
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
@@ -22,7 +22,7 @@ def main() -> None:
 
     application.add_handler(CommandHandler(["roll", "r"], roll))
     application.add_handler(CommandHandler(["reroll", "rr"], reroll))
-    application.add_handler(CommandHandler("help", help))
+    application.add_handler(CommandHandler("help", help_message))
 
     application.run_polling(allowed_updates=Update.ALL_TYPES)
 

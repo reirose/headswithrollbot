@@ -10,7 +10,7 @@ from _exceptions import input_error
 last_rolls: dict = {}
 
 
-async def help(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+async def help_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     mes = update.message
     text = ("Usage:\n<code>/roll [n]d[m]</code> -- roll <i>n</i> d<i>m</i> dices\n"
             "Available dices: d4, d6, d8, d10, d12, d20, d100\n"
