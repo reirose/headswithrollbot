@@ -19,3 +19,4 @@ python main.py --token TELEGRAM BOT TOKEN
   E.g.: ```/roll 3d6 1d20```\
   Just ```/roll``` will roll you 1d100
  - ```/reroll``` -- reroll last dices
+ - Available shortcuts: <br>```/r``` for ```/roll```<br>```/rr``` for ```/reroll```
